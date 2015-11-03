@@ -74,6 +74,7 @@
   <ItemGroup>
     <Content Include="Libs\Newtonsoft.Json.dll" />
     <Content Include="Libs\System.Data.Entity.Design.PluralizationServices.dll" />
+    <Content Include="License.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

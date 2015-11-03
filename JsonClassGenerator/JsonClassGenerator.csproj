@@ -121,6 +121,7 @@
   <ItemGroup>
     <Content Include="json-csharp-icon.ico" />
     <Content Include="Libs\Xamasoft.BetterLinkLabel.dll" />
+    <Content Include="License.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
