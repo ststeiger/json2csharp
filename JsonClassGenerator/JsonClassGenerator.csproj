@@ -121,6 +121,7 @@
   <ItemGroup>
     <Content Include="json-csharp-icon.ico" />
     <Content Include="Libs\Xamasoft.BetterLinkLabel.dll" />
+    <None Include="ReadMe.md" />
     <Content Include="License.txt" />
   </ItemGroup>
   <ItemGroup>
