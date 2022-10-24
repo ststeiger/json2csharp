@@ -186,6 +186,7 @@ namespace Xamasoft.JsonClassGenerator.UI
 
             var gen = new JsonClassGenerator();
             gen.Example = edtJson.Text;
+            // gen.Example = System.IO.File.ReadAllText(@"D:\Stefan.Steiger\Downloads\units\users.json", System.Text.Encoding.UTF8);
             gen.InternalVisibility = radInternal.Checked;
             gen.CodeWriter = (ICodeWriter)cmbLanguage.SelectedItem;
             gen.ExplicitDeserialization = chkExplicitDeserialization.Checked && gen.CodeWriter is CSharpCodeWriter;

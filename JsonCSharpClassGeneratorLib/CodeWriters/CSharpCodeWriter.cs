@@ -195,8 +195,18 @@ namespace Xamasoft.JsonClassGenerator.CodeWriters
 
                 if (config.UsePascalCase)
                 {
+                    
+                    if (false)
+                    {
+                        sw.WriteLine(prefix + "[JsonProperty(\"{0}\")]", field.JsonMemberName);
+                        sw.WriteLine(prefix + "[JsonPropertyName(\"{0}\")]", field.JsonMemberName);
+                    }
+                    else
+                    {
+                        sw.WriteLine(prefix + "[Newtonsoft.Json.JsonProperty(\"{0}\")]", field.JsonMemberName);
+                        sw.WriteLine(prefix + "[System.Text.Json.Serialization.JsonPropertyName(\"{0}\")]", field.JsonMemberName);
+                    }
 
-                    sw.WriteLine(prefix + "[JsonProperty(\"{0}\")]", field.JsonMemberName);
                 }
 
                 if (config.UseProperties)
